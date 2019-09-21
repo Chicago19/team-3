@@ -8,16 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- link to external CSS sheet -->
-  <link rel="stylesheet" href="poder-bootstrap-styles.css">
+<!--   <link rel="stylesheet" href="poder-bootstrap-styles.css"> -->
 
     <!-- Bootstrap's CSS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-    <script src="bootstrap-table-export.js"></script>
-    <script type="text/javascript" src="FileSaver.min.js"></script>
-    <script type="text/javascript" src="tableExport.min.js"></script>
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="bootstrap-table-export.js"></script>
+  <script type="text/javascript" src="FileSaver.min.js"></script>
+  <script type="text/javascript" src="tableExport.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
 
     <!-- My own stylesheet can override Bootstrap's CSS -->
   <style>
@@ -193,10 +194,12 @@
 		document.querySelector("#tdLocation").innerHTML = document.querySelector("#locaitionform").value;
 
 		document.querySelector("#tdTime").innerHTML = document.querySelector("#timeForm").value;
-
-    $('#myTable').tableExport({type:'csv'});
 	}
 
+	$('#myTable').tableExport({type:'csv'});
+
+
+//}
 </script>
 
 </body>
