@@ -65,7 +65,7 @@ function Landing(props) {
 
   return (
     <React.Fragment>
-      
+
       <LandingPageLayout backgroundClassName={classes.background}>
       {/* Increase the network loading priority of the background image. */}
       <img style={{ display: 'none' }} src={backgroundImage} alt="increase priority" />
@@ -73,7 +73,7 @@ function Landing(props) {
        PODER
       </Typography>
       <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
-     This could be their slogan. 
+     This could be their slogan.
       </Typography>
       <Button
         color="secondary"
@@ -88,7 +88,7 @@ function Landing(props) {
       <Typography variant="body2" color="inherit" className={classes.more}>
         Second Slogan
       </Typography>
-    </LandingPageLayout> 
+    </LandingPageLayout>
 
     <section className={classes.root}>
     <Container className={classes.container}>
@@ -149,7 +149,7 @@ function Landing(props) {
       </Grid>
     </Container>
   </section>
-      
+
     </React.Fragment>
   );
 }
