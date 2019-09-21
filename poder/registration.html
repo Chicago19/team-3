@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Poder Site</title>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- metatag makes website responsive based on browser width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- link to external CSS sheet -->
+<!--   <link rel="stylesheet" href="poder-bootstrap-styles.css"> -->
+
+    <!-- Bootstrap's CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="bootstrap-table-export.js"></script>
+  <script type="text/javascript" src="FileSaver.min.js"></script>
+  <script type="text/javascript" src="tableExport.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+    <!-- My own stylesheet can override Bootstrap's CSS -->
+  <style>
+  </style>
+
+
+    <script type="text/javascript"> 
+      function check(){
+      
+        alert('Thank you for filling out the registration form');
+      }
+    </script>
+
+<!--
+     <script type="text/javascript"> 
+      let name;
+      let email;
+      let password; 
+      let codigoPostal;
+      let transportation;
+      let site;
+      let preferredTime;
+    </script>
+-->
+
+</head>
+<body>
+
+<form>
+
+ <!-- Navigation bar -->
+	<nav class="navbar navbar-expand-md justify-content-left navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">PODER</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+	  			<a class="nav-item nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+	  			<a class="nav-item nav-link active" href="registration.html">Register</a>
+	  			<a class="nav-item nav-link" href="test.html">Test</a>
+	  			<a class="nav-item nav-link" href="about.html">About</a>
+	  			<a class="nav-item nav-link" href="profile.html">Profile</a>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Header -->
+	<div class="jumbotron">
+  		<div class="container jumbo-container">
+    		<!-- <h1 class="display-4"><strong>Welcome to PODER</strong></h1> -->
+    		<!-- <p class="lead"><strong>Since 1997, PODER has empowered Spanish-speaking adult immigrants to create successful and fulfilling new lives in the United States.</strong></p> -->
+  		</div>
+	</div>
+
+<div class="container">
+<h2 align="center">Registration Form</h2>
+<br>
+
+
+
+
+
+       <form>
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="username" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+            <label for="emailAddress">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">No vamos a compartir su email con nadie.</small>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="name">Código Postal</label>
+            <input type="text" class="form-control" id="postal" aria-describedby="CodigoPostal"
+                placeholder="Código Postal">
+​
+        </div>
+        <div class="form-group">
+            <label for="name">Transportación</label>
+            <input type="email" class="form-control" id="trans" aria-describedby="transportacion"
+                placeholder="¿Cuál es su principal medio de transporte?">
+        </div>
+        <div class="form-group">
+            <label for="locaitionform">Por Favor seleccione el sitio del programa do PODER donde desea recibir las clases</label>
+            <select class="form-control" id="locaitionform">
+                <option>Pulaski/Marquette Bank (6155 S. Pulaski)</option>
+                <option>Kedzie/MFS (6422 S.Kedzie)</option>
+                <option>Sawyer/St Gall Parish (5533 S Sawyer)</option>
+                <option>Stevenson/MFS(8010 S.Kstner)</option>
+            
+            </select>
+        </div>
+​
+        <div class="form-group">
+                <label for="timeForm">Por Facor seleccione el tiempo de clase preferida</label>
+                <select class="form-control" id="timeForm">
+                    <option>Mañanas</option>
+                    <option>Noches</option>
+                </select>
+            </div>
+​
+            <h3> Mi Compromiso Y Responsabilidades con PODER Contrato</h3>
+            <p>Bienvenido A PODER. Usted ha escogido un centro educacional para adultos quienes están comprometidos a proveer una educación de calidad para apoyar sus crecimiento profesionales. Para ayudarle a lograr sus metas academicas, hay una estructura de PODER que se ha implementado.</p>
+​
+​
+​
+​
+​
+​
+​
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Accepto Las Pocilas</label>
+        </div>
+        <button type="button" id="mySubmission" class="btn btn-primary">Acceptar</button>
+    </form>
+
+<table class="table" id="myTable">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Password</th>
+      <th scope="col">Codio Postal</th>
+      <th scope="col">Transportation</th>
+      <th scope="col">Site</th>
+      <th scope="col">Preferred Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td id="tdName"></td>
+      <td id="tdEmail"></td>
+      <td id="tdPassword"></td>
+      <td id="tdPostal"></td>
+      <td id="tdTranspo"></td>
+      <td id="tdLocation"></td>
+      <td id="tdTime"></td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+<script>
+	document.getElementById("mySubmission").onclick = function() {
+		// console.log(document.querySelector("#name").value);
+		// console.log(document.querySelector("#exampleInputEmail1").value);
+		// console.log(document.querySelector("#password").value);
+		// console.log(document.querySelector("#postal").value);
+		// console.log(document.querySelector("#trans").value);
+		// console.log(document.querySelector("#locaitionform").value);
+		// console.log(document.querySelector("#timeForm").value);
+
+		document.querySelector("#tdName").innerHTML = document.querySelector("#name").value;
+
+		document.querySelector("#tdEmail").innerHTML = document.querySelector("#exampleInputEmail1").value;
+
+		document.querySelector("#tdPassword").innerHTML = document.querySelector("#password").value;
+
+		document.querySelector("#tdPostal").innerHTML = document.querySelector("#postal").value;
+
+		document.querySelector("#tdTranspo").innerHTML = document.querySelector("#trans").value;
+
+		document.querySelector("#tdLocation").innerHTML = document.querySelector("#locaitionform").value;
+
+		document.querySelector("#tdTime").innerHTML = document.querySelector("#timeForm").value;
+	}
+
+	$('#myTable').tableExport({type:'csv'});
+
+
+//}
+</script>
+
+</body>
+
+
+</html>
