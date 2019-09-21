@@ -1,0 +1,107 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+* {
+	box-sizing: border-box;
+}
+.jumbotron {
+	background-image: url("poder.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+/* The parent */
+.container {
+	display: flex;
+	height: 400px;
+
+	flex-direction: column;
+
+	justify-content: flex-start;
+	align-items: left;
+}
+.col {
+	width: 100px;
+}
+.col img {
+	width: 100%;
+}
+.col .paragraph {
+	font-size: 18px;
+	text-align: left;
+	padding-bottom: 20px;
+}
+.row {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid gray;
+}
+.row2 {
+	margin-bottom: 40px;
+}
+.row7 {
+	text-align: center;
+}
+.row7 .col {
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid gray;
+}
+
+.col .button {
+  background-color: #514CA9;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 2px solid #514CA9;
+}
+.row2 {
+	flex-direction: row-reverse;
+}
+.row5 img {
+	margin-left: auto;
+	margin-right: auto;
+}
+.row7 .col img {
+	border-radius: 50%;
+	width: 50%;
+}
+.button:hover {
+	background-color: white;
+	color: #514CA9;
+	border: 2px solid #514CA9;
+}
+
+.indent {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.col .paragraph {
+	font-size: 20px;
+	}
+	.row7 .col img {
+	border-radius: 50%;
+	width: 100%;
+	}
+	.row7 .col .paragraph {
+		font-size: 16px;
+	}
+}
+
+
+
+
+
+
