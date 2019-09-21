@@ -243,11 +243,10 @@ let dialogForRegistration =
         </Typography>
       </Toolbar>
     </AppBar>
-    <DialogTitle id="form-dialog-title">Registration</DialogTitle>
+    <DialogTitle id="form-dialog-title">FORMA DE INSCRIPCIÓN</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            To subscribe to this website, please enter your email address here. We will send updates
-            occasionally.
+          ¡Gracias por considerer a PODER como su nuevo hogar educativo! Por favor llene el siguiente formulario de inscripción y revise nuestras políticas en la parte posterior. ¡Esperamos verlos en el salón de clases!
           </DialogContentText>   
           <TextField
             autoFocus
