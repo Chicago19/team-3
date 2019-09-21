@@ -1,13 +1,15 @@
 import React from 'react';
 import Landing from '../src/Pages/Landing/landing'
+
+import ButtonAppBar from '../src/Components/navbar'
+
 function App() {
   return (
     <div>
-      <React.Fragment>
-        <Landing />
-
-      </React.Fragment>
-
+    <React.Fragment>
+    <ButtonAppBar/>
+    <Landing/>
+    </React.Fragment>
     </div>
   );
 }
