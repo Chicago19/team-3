@@ -66,7 +66,7 @@
           window.location = "pass.html";
       }
       else{
-        window.location = "fail.html";
+        window.location = "english_classes.html";
       }
     }
   
