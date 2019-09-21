@@ -25,7 +25,7 @@
       }
     </script>
 
-
+<!--
      <script type="text/javascript"> 
       let name;
       let email;
@@ -35,6 +35,7 @@
       let site;
       let preferredTime;
     </script>
+-->
 
 </head>
 <body>
@@ -91,13 +92,13 @@
         </div>
         <div class="form-group">
             <label for="name">Código Postal</label>
-            <input type="email" class="form-control" id="name" aria-describedby="CodigoPostal"
+            <input type="text" class="form-control" id="postal" aria-describedby="CodigoPostal"
                 placeholder="Código Postal">
 ​
         </div>
         <div class="form-group">
             <label for="name">Transportación</label>
-            <input type="email" class="form-control" id="name" aria-describedby="transportacion"
+            <input type="email" class="form-control" id="trans" aria-describedby="transportacion"
                 placeholder="¿Cuál es su principal medio de transporte?">
         </div>
         <div class="form-group">
@@ -132,7 +133,7 @@
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Accepto Las Pocilas</label>
         </div>
-        <button type="submit" class="btn btn-primary">Acceptar</button>
+        <button type="button" id="mySubmission" class="btn btn-primary">Acceptar</button>
     </form>
 
 <table class="table">
@@ -151,19 +152,58 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>John Doe</td>
-      <td>jdoe@gmail.com</td>
-      <td>IloveDogs!</td>
-      <td>12345</td>
-      <td>Bus</td>
-      <td>Pulaski</td>
-      <td>Mornings</td>
+      <td id="tdName"></td>
+      <td id="tdEmail"></td>
+      <td id="tdPassword"></td>
+      <td id="tdPostal"></td>
+      <td id="tdTranspo"></td>
+      <td id="tdLocation"></td>
+      <td id="tdTime"></td>
     </tr>
   </tbody>
 </table>
 
     </div>
+<script>
+	document.getElementById("mySubmission").onclick = function() {
+		// console.log(document.querySelector("#name").value);
+		// console.log(document.querySelector("#exampleInputEmail1").value);
+		// console.log(document.querySelector("#password").value);
+		// console.log(document.querySelector("#postal").value);
+		// console.log(document.querySelector("#trans").value);
+		// console.log(document.querySelector("#locaitionform").value);
+		// console.log(document.querySelector("#timeForm").value);
 
+		document.querySelector("#tdName").innerHTML = document.querySelector("#name").value;
+
+		document.querySelector("#tdEmail").innerHTML = document.querySelector("#exampleInputEmail1").value;
+
+		document.querySelector("#tdPassword").innerHTML = document.querySelector("#password").value;
+
+		document.querySelector("#tdPostal").innerHTML = document.querySelector("#postal").value;
+
+		document.querySelector("#tdTranspo").innerHTML = document.querySelector("#trans").value;
+
+		document.querySelector("#tdLocation").innerHTML = document.querySelector("#locaitionform").value;
+
+		document.querySelector("#tdTime").innerHTML = document.querySelector("#timeForm").value;
+	}
+	
+	// function submit(){
+	
+ //      let email;
+ //      let password; 
+ //      let codigoPostal;
+ //      let transportation;
+ //      let site;
+ //      let preferredTime;
+
+	// 	var name=document.getElementById("name");
+	// 	console.log(name);
+
+
+//}
+</script>
 
 </body>
 
