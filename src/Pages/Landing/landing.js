@@ -1,11 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import landing from ''
+
 
 function App() {
-  return (
-    <div className="App">
+  return (landing
+    <div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
