@@ -86,12 +86,12 @@ html, body {
 .indent {
 	text-align: center;
 }
-.table {
-	/*display: none;*/
+#myTable {
+	display: none;
 }
 #mySubmission {
-	padding-top: 10px;
-	padding-bottom: 35px;
+	/*padding-top: 10px;
+	padding-bottom: 35px;*/
 }
 
 @media (min-width: 768px) {
