@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Poder Site</title>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- metatag makes website responsive based on browser width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- link to external CSS sheet -->
+  <link rel="stylesheet" href="poder-bootstrap-styles.css">
+
+    <!-- Bootstrap's CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- My own stylesheet can override Bootstrap's CSS -->
+  <style>
+  </style>
+
+
+    <script type="text/javascript"> 
+      function check(){
+      
+        alert('Thank you for filling out the registration form');
+      }
+    </script>
+
+
+     <script type="text/javascript"> 
+      let english;
+      let spanish;
+      let college;  
+    </script>
+
+</head>
+<body>
+
+<form>
+
+ <!-- Navigation bar -->
+	<nav class="navbar navbar-expand-md justify-content-left navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">PODER</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+	  			<a class="nav-item nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+	  			<a class="nav-item nav-link" href="registration.html">Register</a>
+	  			<a class="nav-item nav-link" href="test.html">Test</a>
+	  			<a class="nav-item nav-link" href="about.html">About</a>
+	  			<a class="nav-item nav-link active"  href="profile.html">Profile</a>
+			</div>
+		</div>
+	</nav>
+
+  <div class="container">
+      <div class="row py-5 px-4">
+          <div class="col-xl-8  mx-auto">
+              <!-- Profile widget -->
+              <div class="bg-white shadow rounded overflow-hidden">
+                  <div class="px-4 pt-0 pb-4 bg-dark">
+                      <div class="media align-items-end profile-header">
+                          <div class="profile mr-3 " ><img src="https://images.unsplash.com/photo-1533075377664-f5c0cbc5a91c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=936&q=80" alt="..." width="130" class="rounded mb-2 img-thumbnail"><a href="#" class="btn btn-dark btn-sm btn-block">Edit profile</a></div>
+                          <div class="media-body mb-5 text-white">
+                              <h4 class="mt-0 mb-0">Wli Akbar</h4>
+                              <p class="small mb-4"> <i class="fa fa-map-marker mr-2"></i>Chicago</p>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="bg-light p-4 d-flex justify-content-end text-center">
+                      <ul class="list-inline mb-0">
+                          <li class="list-inline-item">
+                              <h5 class="font-weight-bold mb-0 d-block">5</h5><small class="text-muted"> <i class="fa fa-picture-o mr-1"></i>Assigments Completed</small>
+                          </li>
+                          <li class="list-inline-item">
+                              <h5 class="font-weight-bold mb-0 d-block">2</h5><small class="text-muted"> <i class="fa fa-user-circle-o mr-1"></i>Assigments Due</small>
+                          </li>
+                      </ul>
+                  </div>
+      
+                  <div class="py-4 px-4">
+                      <div class="d-flex align-items-center justify-content-between mb-3">
+                          <h5 class="mb-0">Class Progress</h5><a href="#" class="btn btn-link text-muted">Show Completed Assigments</a>
+                      </div>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      
+                            <div class="row">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Pronouns</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">October 1st.</h6>
+                                      <p class="card-text">What are your prefred pronous</p>
+                                      <a href="#" class="card-link">Start</a>
+                                    </div>
+                                  </div>
+                                  <div class="card" style="width: 18rem;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Learnign Verbs</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">October 2nd</h6>
+                                        <p class="card-text">Reading abour Verbs in the Enlish Language.</p>
+                                        <a href="#" class="card-link">Read</a>
+                                      
+                                      </div>
+                                    </div>
+                                    </div>
+                              
+                      <div class="py-4">
+                          <h5 class="mb-3">Recent Annoucements</h5>
+                          <div class="p-4 bg-light rounded shadow-sm">
+                              <p class="font-italic mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                              <ul class="list-inline small text-muted mt-3 mb-0">
+                                  <li class="list-inline-item"><i class="fa fa-comment-o mr-2"></i>12 Comments</li>
+                                  <li class="list-inline-item"><i class="fa fa-heart-o mr-2"></i>70 Likes</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div><!-- End profile widget -->
+ </div>
+<!-- Load React. -->
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+<!-- Load our React component. -->
+<script src="like_button.js"></script>
+
+</body>
+
+
+</html>
