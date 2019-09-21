@@ -6,15 +6,33 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Bootstrap CSS -->
+  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <script type="text/javascript"> 
+    	let userName1;
+    	let pswd1;
+    	let adminUN='Administrator';
+    	let adminPW='Password';
+    </script>
 
+    <script type="text/javascript"> 
+    	function check(){
+    	
+    		var x=document.getElementById("inputUN").value;
+    		userName1=x;
+    		var y=document.getElementById("inputPW").value;
+    		pswd1=y;
+    		if(userName1==adminUN && pswd1==adminPW){
+    			window.location.href = 'https://www.google.com/';
+    			//<a href="https://www.google.com/">
+    		}
+    		else{
+    			alert('Wrong Credentials');
+    		}
+    	}
 
-
-  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
- 
-
+    </script>
 
     <div class="container">
   
@@ -24,10 +42,7 @@
       <img src="logo1.jpg">
     </div>  
 </div>
- 
- 
-
-	
+ 	
 	</head>
 
 	<body>
@@ -37,16 +52,20 @@
 		<h1> <strong>Welcome Admin</strong></h1>
 		</div>
 
-
-
 		<form action="process.php" method="POST">
 			<div>
 			<label> Username</label>
-			<input type="text" name="userName">
+			<input  type="text" id="inputUN">
 			</div>
 			<div>
 			<label> Password </label>
-			<input type="text" name="pswd">
+			<input id="inputPW" type="text" name="pswd">
 			</div>
+		</form>
+		<script type="text/javascript"> 
+			userName1=document.getElementById("inputUN").value;
+			pswd1=document.getElementById("inputPW").value;
+		</script>
+		<button onclick="check()"> Login</button>
 	</body>
 </html>
