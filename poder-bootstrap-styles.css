@@ -79,6 +79,10 @@ html, body {
 	border: 2px solid #514CA9;
 }
 
+.indent {
+	text-align: center;
+}
+
 @media (min-width: 768px) {
 	.col .paragraph {
 	font-size: 20px;
