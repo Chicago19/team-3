@@ -69,6 +69,10 @@ html, body {
 .row2 {
 	flex-direction: row-reverse;
 }
+.row5 img {
+	margin-left: auto;
+	margin-right: auto;
+}
 .row7 .col img {
 	border-radius: 50%;
 	width: 50%;
