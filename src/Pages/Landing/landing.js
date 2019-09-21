@@ -17,6 +17,9 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import Input from '@material-ui/core/Input';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
 
 import MenuItem from '@material-ui/core/MenuItem';
 
@@ -27,6 +30,14 @@ const backgroundImage =
   'https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2004&q=80';
 
 const styles = theme => ({
+  root2: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
   root: {
     display: 'flex',
     overflow: 'hidden',
@@ -76,30 +87,30 @@ const styles = theme => ({
   },
   appBar: {
     position: 'relative',
-  }
+  },
+  card: {
+   
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+
+  },
+  bullet: {
+    display: 'inline-block',
+    margin: '0 2px',
+    transform: 'scale(0.8)',
+  },
+  title: {
+    fontSize: 14,
+  },
+  pos: {
+    marginBottom: 12,
+  },
 });
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const currencies = [
-  {
-    value: 'USD',
-    label: '$',
-  },
-  {
-    value: 'EUR',
-    label: '€',
-  },
-  {
-    value: 'BTC',
-    label: '฿',
-  },
-  {
-    value: 'JPY',
-    label: '¥',
-  },
-];
 
 class Landing extends Component {
   constructor(props) {
@@ -110,6 +121,10 @@ class Landing extends Component {
       },
       values: '',
       setValues: '',
+      name: '',
+      zipCode:'',
+      email:'',
+      transport:'',
     }
   }
 
@@ -138,11 +153,45 @@ closeItemCard = () => {
   })
 }
 
+handleNameChange = (event) => {
+  this.setState({
+    name: event.target.value,
+  });
+};
+handleZipCodeChange = (event) => {
+  this.setState({
+    zipCode: event.target.value,
+  });
+};
+handleEmailChange = (event) => {
+  this.setState({
+    email: event.target.value,
+  });
+};
+
+handleTranspotationChange = (event) => {
+  this.setState({
+    transport: event.target.value,
+  });
+};
+
+
+submitAnswers = () => {
+  // this.setState({
+  //   name: this.state.name,
+  // })
+  console.log(this.state.name)
+  console.log(this.state.zipCode)
+  console.log(this.state.email)
+  console.log(this.state.transport)
+  
+
+}
   render() {
 
     const { classes, } = this.props;
     // Properties
-    const { registrationCard,values } = this.state;
+    const { registrationCard,values,name,zipCode } = this.state;
     let landingComponent =
       <div>
         <LandingPageLayout backgroundClassName={classes.background}>
@@ -256,6 +305,8 @@ let dialogForRegistration =
             label="Nombre"
             type="string"
             fullWidth
+            value={this.state.name}
+            onChange={this.handleNameChange}
           />
           <TextField
             autoFocus
@@ -264,6 +315,8 @@ let dialogForRegistration =
             label="Código Postal"
             type="number"
             fullWidth
+            value={this.state.zipCode}
+            onChange={this.handleZipCodeChange}
           />
           <TextField
             autoFocus
@@ -272,14 +325,19 @@ let dialogForRegistration =
             label="Email Address"
             type="email"
             fullWidth
+            value={this.state.email}
+            onChange={this.handleEmailChange}
+            
           />
           <TextField
             autoFocus
             margin="dense"
             id="transpotation"
             label="¿Cuál es su principal medio de transporte?"
-            type="email"
+            type="string"
             fullWidth
+            value={this.state.transport}
+            onChange={this.handleTranspotationChange}
           />
          
           {/* <TextField
@@ -303,6 +361,80 @@ let dialogForRegistration =
         </MenuItem>
       ))} 
     </TextField>   */}
+<div className={classes.root2}>
+<Grid container spacing={3}>
+<Grid item xs={6} sm={3}>
+    <Card className={classes.card}>
+      <CardContent>
+        <Typography className={classes.title} color="textSecondary" gutterBottom>
+          Word of the Day
+        </Typography>
+        <Typography variant="h5" component="h2">
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          adjective
+        </Typography>
+        <Typography variant="body2" component="p">
+          well meaning and kindly.
+          <br />
+          {'"a benevolent smile"'}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+    </Grid>
+    <Grid item xs={6} sm={3}>
+    <Card className={classes.card}>
+      <CardContent>
+        <Typography className={classes.title} color="textSecondary" gutterBottom>
+          Word of the Day
+        </Typography>
+        <Typography variant="h5" component="h2">
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          adjective
+        </Typography>
+        <Typography variant="body2" component="p">
+          well meaning and kindly.
+          <br />
+          {'"a benevolent smile"'}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+    </Grid>
+    <Grid item xs={6} sm={3}>
+    <Card className={classes.card}>
+      <CardContent>
+        <Typography className={classes.title} color="textSecondary" gutterBottom>
+          Word of the Day
+        </Typography>
+        <Typography variant="h5" component="h2">
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          adjective
+        </Typography>
+        <Typography variant="body2" component="p">
+          well meaning and kindly.
+          <br />
+          {'"a benevolent smile"'}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+    </Grid>
+    </Grid>
+
+</div>
+
+   
+
  
       
           
@@ -311,7 +443,7 @@ let dialogForRegistration =
           <Button onClick={this.closeItemCard} color="primary">
             Cancel
           </Button>
-          <Button onClick={this.closeItemCard} color="primary">
+          <Button onClick={this.submitAnswers()} color="primary">
             Subscribe
           </Button>
         </DialogActions>
