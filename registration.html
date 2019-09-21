@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- link to external CSS sheet -->
-  <link rel="stylesheet" href="poder-bootstrapy-styles.css">
+  <link rel="stylesheet" href="poder-bootstrap-styles.css">
 
     <!-- Bootstrap's CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -32,43 +32,37 @@
       let college;  
     </script>
 
-
-
-
-
-
-
-
 </head>
 <body>
 
 <form>
 
- <nav class="navbar navbar-expand-md justify-content-left navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Diversity in Hiring</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="team.html">Register</a>
-          <a class="nav-item nav-link" href="team.html">Test</a>
-          <a class="nav-item nav-link" href="#">Profile</a>
-          <a class="nav-item nav-link" href="team.html">About</a>
-      </div>
-    </div>
-  </nav>
+ <!-- Navigation bar -->
+	<nav class="navbar navbar-expand-md justify-content-left navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">PODER</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+	  			<a class="nav-item nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+	  			<a class="nav-item nav-link active" href="registration.html">Register</a>
+	  			<a class="nav-item nav-link" href="test.html">Test</a>
+	  			<a class="nav-item nav-link" href="about.html">About</a>
+	  			<a class="nav-item nav-link" href="profile.html">Profile</a>
+			</div>
+		</div>
+	</nav>
 
- 
-  <div class="jumbotron">
-      <div class="container jumbo-container">
-        <h1 class="display-4"><strong>Welcome to Poder</strong></h1>
-        <p class="lead"><strong>Since 1997, PODER has empowered Spanish-speaking adult immigrants to create successful and fulfilling new lives in the United States.</strong></p>
+	<!-- Header -->
+	<div class="jumbotron">
+  		<div class="container jumbo-container">
+    		<!-- <h1 class="display-4"><strong>Welcome to PODER</strong></h1> -->
+    		<!-- <p class="lead"><strong>Since 1997, PODER has empowered Spanish-speaking adult immigrants to create successful and fulfilling new lives in the United States.</strong></p> -->
+  		</div>
+	</div>
 
-      </div>
-  </div>
-
+<div class="container">
 <h2 align="center">Registration Form</h2>
 <br>
 
@@ -117,13 +111,13 @@
         <div class="form-group">
                 <label for="timeForm">Por Facor seleccione el tiempo de clase preferida</label>
                 <select class="form-control" id="timeForm">
-                    <option>Mananas</option>
+                    <option>Mañanas</option>
                     <option>Noches</option>
                 </select>
             </div>
 ​
-            <h3> Mi Compromiso Y REsponsabilidades con PODER Contrato</h3>
-            <p>Bienvenido A PODER Uste ha escogido un centro educacional para adultos que esta comprometido a proveer Edicacion de Calidad para reunir sus necesidades. Para ayudarle a lograr sus metas academicas hay una estructura de PODER que se ha implementado.</p>
+            <h3> Mi Compromiso Y Responsabilidades con PODER Contrato</h3>
+            <p>Bienvenido A PODER. Usted ha escogido un centro educacional para adultos quienes están comprometidos a proveer una educación de calidad para apoyar sus crecimiento profesionales. Para ayudarle a lograr sus metas academicas, hay una estructura de PODER que se ha implementado.</p>
 ​
 ​
 ​
@@ -137,13 +131,13 @@
         </div>
         <button type="submit" class="btn btn-primary">Acceptar</button>
     </form>
+    </div>
 
 
 
 
 
   <!--
-
   <nav class="navbar navbar-expand-md justify-content-left navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Diversity in Hiring</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -159,21 +153,15 @@
       </div>
     </div>
   </nav>
-
  
   <div class="jumbotron">
       <div class="container jumbo-container">
         <h1 class="display-4"><strong>Welcome to Poder</strong></h1>
         <p class="lead"><strong>Since 1997, PODER has empowered Spanish-speaking adult immigrants to create successful and fulfilling new lives in the United States.</strong></p>
-
       </div>
   </div>
-
 <h2 align="center">Registration Form</h2>
 <br>
-
-
-
 <div class="name">
   		
     		<h3 align="center">¿Cuál es su nombre?<h3> 
@@ -184,7 +172,6 @@
     		
   		
 	</div>
-
 <div class="age">
   		
     		<h3 align="center">¿Cuantos años tienes?<h3> 
@@ -193,12 +180,10 @@
 </div>
   	
 	</div>
-
 <div class="spanish">
   		
     		<h3 align="center">¿Hablas español?<h3> 
     		<div style="text-align:center;">
-
 <fieldset id="group1">
     <input type="radio" value="Si">
     <label for="Si">Si</label>
@@ -206,11 +191,9 @@
      <label for="No">No</label>
   </fieldset>
 </div>
-
 </div>
   		
 	</div>
-
 	<div class="english">
   		
     		<h3 align="center">¿Hablas ingles?<h3> 
@@ -224,12 +207,10 @@
 </div>
   	
 	</div>
-
 	<div class="college">
   	
     		<h3 align="center">¿Fuiste a la universidad?<h3> 
     	<div style="text-align:center;">
-
 <fieldset id="group1">
     <input type="radio" value="Si">
     <label for="Si">Si</label>
@@ -237,16 +218,12 @@
      <label for="No">No</label>
   </fieldset>
 </div>
-
 	</div>
-
   <br>
   <br>
-
 <div class="submit" align="center">
 <button onclick="check()"> Submit</button>
 </div>
-
 -->
 
 
